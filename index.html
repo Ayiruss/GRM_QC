@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="../../node_modules/systemjs/dist/system.js"></script>
+  <script src="../../systemjs.config.js"></script>
+ <script src="pdf_reader.js"></script>
+  <!--<script src="bundle.js"></script>-->
+  <script>
+    _getAllFilesFromFolder('RF027082405');
+      function clickButton(){
+          nextPage();
+      }
+  </script>
+</head>
+
+<body>
+<div>
+  <div id="page" style="width:500px">
+    <canvas id="the-canvas" style="border:1px solid black;"/>
+  </div>
+  <div style="float:right">
+    <input type="file" id="files" name="files[]" multiple />
+
+    <button type="button" id="next" onclick = "clickButton()">NEXT</button>
+  </div>
+</div></body>
+
+</html>
